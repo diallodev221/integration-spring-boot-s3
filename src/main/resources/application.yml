@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: integration-spring-boot-s3
+  cloud:
+    aws:
+      credentials:
+        access-key: ${AWS_ACCESS_KEY_ID}
+        secret-key: ${AWS_SECRET_ACCESS_KEY}
+      s3:
+        region: ${AWS_REGION}
+
+com:
+  diallodev:
+    aws:
+      s3:
+        bucket-name: ${AWS_BUCKET_NAME}
